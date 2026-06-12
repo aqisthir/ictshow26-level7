@@ -1,210 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ICT SHOW</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>ICT SHOW</title>
 
-  <style>
-    body {
-      background: linear-gradient(135deg, #4e73df, #1cc88a);
-      min-height: 100vh;
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    .glass-card {
-      width: 100%;
-      max-width: 480px;
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(15px);
-      border-radius: 20px;
-      padding: 25px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-      color: white;
-    }
+<style>
+body{
+  background: linear-gradient(135deg,#4e73df,#1cc88a);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
 
-    .form-control, select, textarea, .form-range {
-      background: rgba(255, 255, 255, 0.35);
-      border: none;
-      border-radius: 10px;
-      color: white;
-    }
+.glass-card{
+  width:100%;
+  max-width:550px;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(15px);
+  border-radius:20px;
+  padding:25px;
+  color:white;
+}
 
-    select option { color: black; }
+.form-control,
+.form-range{
+  border-radius:10px;
+}
 
-    .score-box {
-      font-size: 18px;
-      font-weight: 600;
-      width: 50px;
-      text-align: right;
-    }
-
-    .btn-modern {
-      background: white;
-      color: #1a73e8;
-      font-weight: 600;
-      border-radius: 12px;
-    }
-  </style>
+.score-box{
+  width:50px;
+  font-weight:bold;
+}
+</style>
 </head>
 
 <body>
 
 <div class="glass-card">
-  <h3 class="text-center fw-bold mb-3">Web Project Score Sheet</h3>
 
-  <form id="form-penilaian">
+<h3 class="text-center mb-4">
+Web Project Score Sheet
+</h3>
 
-    <label class="form-label">Kelompok</label>
-    <select id="tim" class="form-control mb-3" required>
-      <option value="">-- Pilih Tim --</option>
-      <option>Kelompok 1</option>
-      <option>Kelompok 2</option>
-      <option>Kelompok 3</option>
-      <option>Kelompok 4</option>
-      <option>Kelompok 5</option>
-      <option>Kelompok 6</option>
-      <option>Kelompok 7</option>
-      <option>Kelompok 8</option>
-      <option>Kelompok 9</option>
-      <option>Kelompok 10</option>
-      <option>Kelompok 11</option>
-      <option>Kelompok 12</option>
-      <option>Kelompok 13</option>
-      <option>Kelompok 14</option>
-      <option>Kelompok 15</option>
-      <option>Kelompok 16</option>
-      <option>Kelompok 17</option>
-      <option>Kelompok 18</option>
-      <option>Kelompok 19</option>
-      <option>Kelompok 20</option>
-      <option>Kelompok 21</option>
-      <option>Kelompok 22</option>
-      <option>Kelompok 23</option>
-      <option>Kelompok 24</option>
-      <option>Kelompok 25</option>
-      <option>Kelompok 26</option>
-      <option>Kelompok 27</option>
-      <option>Kelompok 28</option>
-      <option>Kelompok 29</option>
-      <option>Kelompok 30</option>
-      <option>Kelompok 31</option>
-      <option>Kelompok 32</option>
-      <option>Kelompok 33</option>
-      <option>Kelompok 34</option>
-      <option>Kelompok 35</option>
-      <option>Kelompok 36</option>
-      <option>Kelompok 37</option>
-      <option>Kelompok 38</option>
-      <option>Kelompok 39</option>
-      <option>Kelompok 40</option>
-      <option>Kelompok 41</option>
-      <option>Kelompok 42</option>
-      <option>Kelompok 43</option>
-      <option>Kelompok 44</option>
-    </select>
+<form id="form-penilaian">
 
-    <hr class="my-3">
+<label class="form-label">Kelompok</label>
 
-    <label class="form-label">Gameplay</label>
-    <div class="d-flex align-items-center gap-3 mb-3">
-      <input type="range" min="0" max="100" value="50" id="gameplay class="form-range">
-      <span class="score-box" id="desainScore">50</span>
-    </div>
+<select id="tim" class="form-control mb-3" required>
+<option value="">-- Pilih Tim --</option>
+<option>Kelompok 1</option>
+<option>Kelompok 2</option>
+<option>Kelompok 3</option>
+<option>Kelompok 4</option>
+<option>Kelompok 5</option>
+<option>Kelompok 6</option>
+<option>Kelompok 7</option>
+<option>Kelompok 8</option>
+<option>Kelompok 9</option>
+<option>Kelompok 10</option>
+<option>Kelompok 11</option>
+<option>Kelompok 12</option>
+<option>Kelompok 13</option>
+<option>Kelompok 14</option>
+<option>Kelompok 15</option>
+<option>Kelompok 16</option>
+<option>Kelompok 17</option>
+<option>Kelompok 18</option>
+<option>Kelompok 19</option>
+<option>Kelompok 20</option>
+<option>Kelompok 21</option>
+<option>Kelompok 22</option>
+<option>Kelompok 23</option>
+<option>Kelompok 24</option>
+<option>Kelompok 25</option>
+<option>Kelompok 26</option>
+<option>Kelompok 27</option>
+<option>Kelompok 28</option>
+<option>Kelompok 29</option>
+<option>Kelompok 30</option>
+<option>Kelompok 31</option>
+<option>Kelompok 32</option>
+<option>Kelompok 33</option>
+<option>Kelompok 34</option>
+<option>Kelompok 35</option>
+<option>Kelompok 36</option>
+<option>Kelompok 37</option>
+<option>Kelompok 38</option>
+<option>Kelompok 39</option>
+<option>Kelompok 40</option>
+<option>Kelompok 41</option>
+<option>Kelompok 42</option>
+<option>Kelompok 43</option>
+<option>Kelompok 44</option>
+</select>
 
-    <label class="form-label">Kreativitas & Orisinalitas</label>
-    <div class="d-flex align-items-center gap-3 mb-3">
-      <input type="range" min="0" max="100" value="50" id="kreativitas" class="form-range">
-      <span class="score-box" id="kontenScore">50</span>
-    </div>
+<hr>
 
-    <label class="form-label">Desain Visual</label>
-    <div class="d-flex align-items-center gap-3 mb-3">
-      <input type="range" min="0" max="100" value="50" id="desain" class="form-range">
-      <span class="score-box" id="fungsiScore">50</span>
-    </div>
-
-    <label class="form-label">Fitur Game</label>
-    <div class="d-flex align-items-center gap-3 mb-3">
-      <input type="range" min="0" max="100" value="50" id="fitur" class="form-range">
-      <span class="score-box" id="fungsiScore">50</span>
-    </div>
-
-    <label class="form-label">Catatan Juri</label>
-    <textarea id="catatan" class="form-control mb-3" rows="3" placeholder="Masukkan komentar"></textarea>
-
-    <button class="btn btn-modern w-100 mt-2">Submit Penilaian</button>
-  </form>
+<label class="form-label">Gameplay</label>
+<div class="d-flex gap-3 align-items-center mb-3">
+  <input type="range" min="0" max="100" value="50" id="gameplay" class="form-range">
+  <span id="gameplayScore" class="score-box">50</span>
 </div>
 
+<label class="form-label">Kreativitas & Orisinalitas</label>
+<div class="d-flex gap-3 align-items-center mb-3">
+  <input type="range" min="0" max="100" value="50" id="kreativitas" class="form-range">
+  <span id="kreativitasScore" class="score-box">50</span>
+</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<label class="form-label">Desain Visual</label>
+<div class="d-flex gap-3 align-items-center mb-3">
+  <input type="range" min="0" max="100" value="50" id="desain" class="form-range">
+  <span id="desainScore" class="score-box">50</span>
+</div>
+
+<label class="form-label">Fitur Game</label>
+<div class="d-flex gap-3 align-items-center mb-3">
+  <input type="range" min="0" max="100" value="50" id="fitur" class="form-range">
+  <span id="fiturScore" class="score-box">50</span>
+</div>
+
+<label class="form-label">Catatan Juri</label>
+<textarea id="catatan" rows="3" class="form-control mb-3"></textarea>
+
+<button type="submit" class="btn btn-light w-100">
+Submit Penilaian
+</button>
+
+</form>
+</div>
 
 <script>
-  // GANTI INI dengan URL Deployment Google Apps Script Anda yang sudah benar
-  const scriptURL = "https://script.google.com/macros/s/AKfycby9c3VZLFoiAzoIKPMJnVqazQeyBovh0bdADkwMZO7vqdYLr2JYf4ge7Nv4N7NDrAXcqQ/exec";
 
-  // Slider Live Update
-  ["desain","konten","fungsi"].forEach(id => {
-    document.getElementById(id).addEventListener("input", e => {
-      document.getElementById(id + "Score").textContent = e.target.value;
-    });
+const scriptURL =
+"https://script.google.com/macros/s/AKfycby9c3VZLFoiAzoIKPMJnVqazQeyBovh0bdADkwMZO7vqdYLr2JYf4ge7Nv4N7NDrAXcqQ/exec";
+
+// update nilai slider
+[
+ ["gameplay","gameplayScore"],
+ ["kreativitas","kreativitasScore"],
+ ["desain","desainScore"],
+ ["fitur","fiturScore"]
+].forEach(item => {
+
+  const slider = document.getElementById(item[0]);
+  const score = document.getElementById(item[1]);
+
+  slider.addEventListener("input", function(){
+    score.textContent = slider.value;
   });
 
-  // Submit ke Google Apps Script
-  document.getElementById("form-penilaian").addEventListener("submit", function(e){
-    e.preventDefault();
+});
 
-    // Tampilkan indikator loading (opsional)
-    const submitButton = this.querySelector('button');
-    submitButton.disabled = true;
-    submitButton.textContent = "Mengirim...";
+// submit form
+document
+.getElementById("form-penilaian")
+.addEventListener("submit", function(e){
 
+  e.preventDefault();
 
-    // 1. Ambil data dari formulir
-    const data = {
-      tim: document.getElementById("tim").value,
-      gameplay: document.getElementById("gameplay").value,
-      kreativitas: document.getElementById("kreativitas").value,
-      desain: document.getElementById("desain").value,
-      fitur: document.getElementById("fitur").value,
-      catatan: document.getElementById("catatan").value
-    };
+  const btn = this.querySelector("button");
 
-    // 2. Buat objek FormData
-    const formData = new FormData();
-    for (const key in data) {
-        formData.append(key, data[key]);
-    }
-    
-    // 3. Lakukan Fetch menggunakan FormData
-    fetch(scriptURL, {
-      method: "POST",
-      // Penting: Hapus header Content-Type, biarkan browser yang menentukannya
-      body: formData 
-    })
-    .then(res => res.text())
-    .then(res => {
-      alert("✅ Penilaian berhasil disimpan!");
-      document.getElementById("form-penilaian").reset();
-    })
-    .catch(err => {
-      // Menangkap 'Failed to fetch' jika koneksi/CORS bermasalah
-      alert("❌ Gagal menyimpan data! Mohon periksa kembali: 1. Koneksi internet, atau 2. Deployment Apps Script Anda (Akses: Anyone). Detail Error: " + err);
-    })
-    .finally(() => {
-        // Kembalikan tombol ke kondisi semula
-        submitButton.disabled = false;
-        submitButton.textContent = "Submit Penilaian";
-    });
+  btn.disabled = true;
+  btn.textContent = "Mengirim...";
+
+  const formData = new FormData();
+
+  formData.append("tim",
+    document.getElementById("tim").value);
+
+  formData.append("gameplay",
+    document.getElementById("gameplay").value);
+
+  formData.append("kreativitas",
+    document.getElementById("kreativitas").value);
+
+  formData.append("desain",
+    document.getElementById("desain").value);
+
+  formData.append("fitur",
+    document.getElementById("fitur").value);
+
+  formData.append("catatan",
+    document.getElementById("catatan").value);
+
+  fetch(scriptURL,{
+    method:"POST",
+    body:formData
+  })
+  .then(response => response.text())
+  .then(result => {
+
+    alert("✅ Penilaian berhasil disimpan");
+
+    document
+      .getElementById("form-penilaian")
+      .reset();
+
+  })
+  .catch(error => {
+
+    console.error(error);
+
+    alert("❌ Gagal menyimpan data");
+
+  })
+  .finally(() => {
+
+    btn.disabled = false;
+    btn.textContent = "Submit Penilaian";
+
   });
+
+});
+
 </script>
 
 </body>
